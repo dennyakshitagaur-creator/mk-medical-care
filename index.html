@@ -101,7 +101,7 @@
  </main>
  <footer><div class="container footer-grid"><div><strong>MK Medical Care</strong><p>Global Patients. Trusted Indian Care.</p></div><div class="footer-disclaimer">This platform does not make medical decisions. A clinician must assess suitability, final costs and appointment eligibility. Agency names, rates and bookings remain empty until real providers register and are approved.</div></div></footer>
 
- <dialog id="authDialog" class="auth-dialog"><form id="authForm" class="auth-box"><button type="button" class="close" id="authClose" aria-label="Close dialog">×</button><span class="eyebrow teal">SECURE ACCOUNT</span><h2 id="authTitle">Sign in</h2><p id="authHelp" class="muted">Use an email and password to access your private dashboard.</p><label id="authNameWrap">Name <input id="authName" autocomplete="name" placeholder="Your name" hidden></label><label>Email <input id="authEmail" type="email" required autocomplete="email"></label><label>Password <input id="authPassword" type="password" required minlength="6" autocomplete="current-password"></label><label id="authRoleWrap" hidden>Account type<select id="authRole"><option value="patient">Patient</option><option value="agency">Medical Agency</option></select></label><button class="btn primary fullwidth" id="authSubmit" type="submit">Sign in</button><button type="button" class="btn linkbtn" id="authSwap">Create a new account</button><div id="authError" class="notice error" hidden></div></form></dialog>
+ <dialog id="authDialog" class="auth-dialog"><form id="authForm" class="auth-box"><button type="button" class="close" id="authClose" aria-label="Close dialog">×</button><span class="eyebrow teal">SECURE ACCOUNT</span><h2 id="authTitle">Sign in</h2><p id="authHelp" class="muted">Use an email and password to access your private dashboard.</p><label id="authNameWrap" hidden>Name <input id="authName" autocomplete="name" placeholder="Your name"></label><label>Email <input id="authEmail" type="email" required autocomplete="email"></label><label>Password <input id="authPassword" type="password" required minlength="6" autocomplete="current-password"></label><label id="authRoleWrap" hidden>Account type<select id="authRole"><option value="patient">Patient</option><option value="agency">Medical Agency</option></select></label><button class="btn primary fullwidth" id="authSubmit" type="submit">Sign in</button><button type="button" class="btn linkbtn" id="authSwap">Create a new account</button><div id="authError" class="notice error" hidden></div></form></dialog>
  <script type="module">
 /*
  * MK Medical Care — Firebase-connected MVP
@@ -473,7 +473,19 @@ async function authenticate(ev){
       profile={role,email,name};signedUser=cred.user;refreshAccountUI();clearRoleListeners();startRoleListeners();
     }
     $('#authDialog').close();notify('Signed in. Your role and access are checked using Firebase Security Rules.');
-  }catch(e){$('#authError').textContent=errText(e);$('#authError').hidden=false;}
+  }catch(e){
+    const messages={
+      'auth/email-already-in-use':'This email already has an account. Select Sign in instead.',
+      'auth/invalid-email':'Please enter a valid email address.',
+      'auth/weak-password':'Use a stronger password with at least 6 characters.',
+      'auth/operation-not-allowed':'Email/Password sign-in is not enabled in Firebase Authentication.',
+      'auth/network-request-failed':'Network connection failed. Check internet access and try again.',
+      'auth/unauthorized-domain':'Website domain is not authorized. Check Firebase Authentication authorized domains.',
+      'permission-denied':'Your login may have been created, but Firestore refused to save your patient profile. Contact the admin before trying again.'
+    };
+    $('#authError').textContent=messages[e?.code] || errText(e);
+    $('#authError').hidden=false;
+  }
   finally{submit.disabled=false;}
 }
 
