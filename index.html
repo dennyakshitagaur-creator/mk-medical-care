@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+ <meta name="theme-color" content="#0d2940" />
+ <title>MK Medical Care | Global Patients. Trusted Indian Care.</title>
+ <meta name="description" content="Compare India treatment quotations from approved medical tourism agencies and request a medical appointment." />
+ <style>
+:root{--navy:#0d2940;--navy2:#153f57;--teal:#0f8279;--cyan:#dff5f1;--gold:#edbf7c;--ink:#1d3547;--muted:#647e90;--line:#dce7ee;--bg:#f6f9fc;--white:#fff;--shadow:0 15px 45px rgba(13,41,64,.06)}
+[hidden]{display:none!important}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}a{color:var(--teal);text-decoration:none}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.14}h1{letter-spacing:-.045em}h2{letter-spacing:-.035em}h3{letter-spacing:-.025em}small,.muted{color:var(--muted)}.container{width:min(1190px,calc(100% - 32px));margin:0 auto}.motto{padding:11px;text-align:center;background:var(--navy);color:#dbe9f0;font-weight:750;font-size:13px}.motto span{color:var(--gold)}.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.header-row{min-height:80px;display:flex;justify-content:space-between;align-items:center;gap:14px}.logo{display:flex;gap:12px;align-items:center;color:var(--navy)}.logo-icon{display:grid;place-items:center;flex:0 0 auto;border-radius:15px;width:48px;height:48px;background:linear-gradient(140deg,var(--teal),var(--navy));font:900 20px Georgia,serif;color:#fff;box-shadow:0 8px 20px rgba(15,130,121,.21)}.logo-words{font:800 clamp(18px,2.2vw,28px) Georgia,serif;white-space:nowrap}.logo-words em{color:var(--teal);font-weight:500}.logo-words small{display:block;font:800 9px system-ui,sans-serif;letter-spacing:1.4px;margin-top:3px}.header-actions{display:flex;align-items:center;gap:8px}.user-tag{background:#edf7f5;color:#186d66;padding:8px 12px;border-radius:100px;font-size:12px;font-weight:800;max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn{border:0;border-radius:12px;background:#fff;font-weight:800;padding:12px 17px;color:var(--navy);transition:filter .16s}.btn:hover{filter:brightness(.97)}.btn.primary{color:#fff;background:var(--teal)}.btn.secondary{border:1px solid #d7e4ea;background:#fff;color:var(--navy)}.btn.text-btn,.btn.linkbtn{background:transparent;color:var(--teal)}.btn.fullwidth{width:100%}.tabs{display:flex;align-items:center;gap:8px;margin:20px auto 0;overflow:auto}.tab{border:1px solid var(--line);border-radius:12px;background:#fff;color:#4b697b;font-weight:800;padding:12px 18px;white-space:nowrap}.tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}.screen,.stage{display:none}.screen.active,.stage.active{display:block}.hero{margin-top:24px;border-radius:29px;padding:38px 40px;background:linear-gradient(117deg,#0c273d 15%,#175565 95%);color:#fff;display:grid;grid-template-columns:1.5fr .65fr;gap:22px;overflow:hidden}.eyebrow{color:var(--gold);font-size:11px;font-weight:900;letter-spacing:1.9px}.eyebrow.teal{color:var(--teal)}.hero h1{font-size:clamp(36px,4.5vw,61px);max-width:700px;margin:11px 0 14px}.hero h1 em{font-family:Georgia,serif;font-weight:500;color:#9ce5d8}.hero p{max-width:610px;color:#d6e6ed;font-size:16px}.searchbar{display:flex;gap:9px;margin:24px 0 16px;background:#fff;padding:8px;border-radius:16px;max-width:730px}.searchbar input{border:0;outline:0;flex:1;min-width:0;padding:9px 12px;color:var(--ink)}.chips{display:flex;flex-wrap:wrap;gap:8px}.chips button{border:1px solid rgba(255,255,255,.29);background:rgba(255,255,255,.09);color:#e8f6f2;border-radius:30px;padding:8px 13px;font-size:12px;font-weight:700}.hero-art{display:grid;place-content:center;position:relative}.hero-circle{width:205px;height:205px;border:1px solid rgba(255,255,255,.25);box-shadow:0 0 0 45px rgba(255,255,255,.03),0 0 0 85px rgba(255,255,255,.02);border-radius:50%;display:grid;place-items:center}.hero-circle span{font-size:110px;color:#b4f2e4}.hero-note{position:absolute;bottom:2px;right:0;padding:13px 18px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.19);border-radius:15px;font-size:13px}.stepbar{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:24px 0}.step{display:flex;gap:9px;align-items:center;border-radius:13px;background:#fff;color:#7591a2;padding:13px 14px;font-weight:900;border:1px solid var(--line)}.step span{font-size:13px}.step.active{background:#edfaf7;color:var(--teal);border-color:#97d1c7}.stage{background:#fff;border:1px solid var(--line);border-radius:24px;padding:25px;margin-bottom:20px;box-shadow:var(--shadow)}.section-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:20px}.section-heading h2{font-size:clamp(24px,2.6vw,32px);margin:3px 0 5px}.section-heading p{color:var(--muted);margin:0}.cards{display:grid;gap:14px}.cards.triple{grid-template-columns:repeat(3,minmax(0,1fr))}.cards.double{grid-template-columns:repeat(2,minmax(0,1fr))}.card{border:1px solid var(--line);border-radius:19px;padding:20px;background:#fff;box-shadow:0 6px 20px rgba(13,41,64,.025)}.card h3{font-size:20px;margin-bottom:8px}.card p{color:var(--muted);font-size:14px}.card.selected{background:#f4fffb;border-color:#78cabc;box-shadow:0 12px 27px rgba(15,130,121,.07)}.card .bottom{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-top:20px}.tag{display:inline-block;padding:6px 10px;background:#eaf7f3;border-radius:24px;color:#11786c;font-size:12px;font-weight:850}.price{font-size:27px;color:var(--navy);font-weight:900;letter-spacing:-.04em}.hospital{background:#f5f9fb;border-radius:11px;padding:10px 12px;margin-top:12px;font-size:13px;color:#496576}.two-column{display:grid;grid-template-columns:1.3fr .7fr;gap:18px}.stack{display:grid;gap:17px}.panel{border:1px solid var(--line);border-radius:20px;padding:21px;background:#fff}.panel h3{margin-bottom:12px}.panel p{color:var(--muted)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-grid .wide{grid-column:1 / -1}.form-grid label,.auth-box label,.field{display:grid;gap:7px;font-weight:750;color:#38556a;font-size:14px}input,textarea,select{border:1px solid #d5e3eb;border-radius:11px;padding:11px 13px;background:#fff;color:var(--ink);width:100%;min-width:0}input:focus,textarea:focus,select:focus{outline:3px solid #dcf5ef;border-color:var(--teal)}textarea{resize:vertical}.checkbox-line{display:flex!important;gap:10px;align-items:start}.checkbox-line input{width:auto;margin-top:5px}.rate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.rate-grid label{font-size:13px}.summary{background:#f7fbfc;border:1px solid var(--line);padding:23px;border-radius:20px;align-self:start}.summary h3{font-size:24px}.rowline{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed #d5e5e9;padding:10px 0;font-size:14px}.rowline strong{font-weight:900}.rowline.total{font-size:19px;color:var(--teal)}.navigation{display:flex;justify-content:flex-end;gap:12px;margin-top:23px}.notice{padding:13px 16px;border-radius:13px;background:#e9f7f2;border:1px solid #cde9df;color:#26675e;font-size:14px;margin:13px 0}.notice.error{color:#a23d45;background:#fff1f3;border-color:#f0d1d5}.notice.subtle{background:#f4f8fc;color:#526d7f;border-color:#e0eaf1}.global-notice{position:sticky;top:80px;z-index:18}.setup-banner{padding:14px;text-align:center;color:#744f1a;background:#fff4d7}.dashboard-banner{margin-top:24px;display:flex;justify-content:space-between;align-items:center;gap:18px;border-radius:24px;padding:30px 35px;background:linear-gradient(110deg,var(--navy),#145f68);color:#fff}.dashboard-banner h1{font-size:clamp(28px,4vw,49px);margin:9px 0}.dashboard-banner p{color:#dbeaf1;max-width:730px}.banner-icon{font-size:80px;color:#a1e4d5;opacity:.8}.section-spacer{margin-top:32px}.empty{padding:25px;text-align:center;border:1px dashed #cbdde6;border-radius:17px;background:#fbfdfe;color:var(--muted);grid-column:1 / -1}.muted{color:var(--muted)}.option-line{padding:14px 0;border-bottom:1px solid #e5eef2;display:grid;gap:8px}.option-line:last-child{border:0}.option-line label{display:flex;gap:8px;align-items:center;font-weight:800}.option-line input[type=checkbox]{width:auto}.option-line input[type=number]{max-width:110px}.success-panel{text-align:center;padding:30px}.success-panel h2{font-size:35px}.success-icon{width:76px;height:76px;margin:0 auto 16px;display:grid;place-items:center;border-radius:50%;background:var(--teal);color:#fff;font-size:36px}.footer-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:22px}footer{background:var(--navy);color:#fff;margin-top:60px;padding:30px 0}footer p,footer .footer-disclaimer{color:#c4dbe6;font-size:13px}.auth-dialog{padding:0;border:0;border-radius:21px;max-width:430px;width:calc(100vw - 25px);box-shadow:0 20px 85px rgba(0,0,0,.2)}.auth-dialog::backdrop{background:rgba(13,41,64,.56)}.auth-box{position:relative;background:#fff;padding:27px;display:grid;gap:15px}.auth-box h2{font-size:31px;margin:0}.auth-box p{margin:0}.close{position:absolute;right:20px;top:17px;background:#f4f7f9;border:0;border-radius:50%;width:35px;height:35px;font-size:24px}.sr-only{position:absolute;left:-10000px}code{font-family:ui-monospace,monospace}#adminWorkspace,#agencyWorkspace{margin-bottom:35px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-art{display:none}.cards.triple{grid-template-columns:repeat(2,1fr)}.two-column{grid-template-columns:1fr}.rate-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.container{width:calc(100% - 20px)}.motto{font-size:11px}.header-row{min-height:70px}.logo-words{font-size:18px}.logo-words small{font-size:7px;letter-spacing:.6px}.logo-icon{width:39px;height:39px;font-size:16px}.user-tag{display:none}.header-actions .btn{padding:9px 11px;font-size:12px}.hero{margin-top:17px;padding:26px 19px}.hero h1{font-size:35px}.searchbar{flex-direction:column}.stepbar{gap:4px}.step{padding:9px 5px;justify-content:center;font-size:12px}.step span{display:none}.stage{padding:18px 14px}.cards.triple,.cards.double,.form-grid,.rate-grid{grid-template-columns:1fr}.form-grid .wide{grid-column:auto}.section-heading{flex-wrap:wrap}.dashboard-banner{padding:22px}.banner-icon{display:none}.footer-grid{grid-template-columns:1fr}.navigation{flex-wrap:wrap}.navigation .btn{flex:1}}
+@media print{.site-header,.motto,.tabs,.stepbar,.hero,.navigation,.btn,.global-notice,.setup-banner{display:none!important}body{background:#fff}.screen,.stage{display:block!important}.screen:not(#patientScreen),#pStep1,#pStep2,#pStep3,#pStep4,#pStep5,#myBookings{display:none!important}#pStep6{display:block!important}}
+
+</style>
+</head>
+<body>
+ <div class="motto">MK MEDICAL CARE <span>✦ Global Patients. Trusted Indian Care.</span></div>
+ <header class="site-header">
+   <div class="container header-row">
+     <a href="#" class="logo" id="homeLink"><span class="logo-icon">MK</span><span class="logo-words">MK <em>Medical</em> Care<small>INTERNATIONAL PATIENT SERVICES</small></span></a>
+     <div class="header-actions"><span id="userTag" class="user-tag">Guest</span><button id="authTop" class="btn secondary">Sign in</button><button id="logoutBtn" class="btn text-btn" hidden>Sign out</button></div>
+   </div>
+ </header>
+ <div id="setupBanner" class="setup-banner"><strong>Firebase configured:</strong> Your MK Medical Care project has been added. Before submitting any test booking, publish the restricted <code>firestore.rules</code> from the package. Never upload real patient records before privacy and security review.</div>
+ <div class="container tabs" aria-label="Dashboards">
+   <button class="tab active" data-screen="patient">Patient Dashboard</button>
+   <button class="tab" data-screen="agency">Medical Agency</button>
+   <button class="tab" data-screen="admin">Admin Dashboard</button>
+ </div>
+ <div id="message" role="status" aria-live="polite" class="notice global-notice" hidden></div>
+ <main class="container">
+   <section class="screen active" id="patientScreen">
+     <div class="hero">
+       <div>
+         <span class="eyebrow">Explore treatment options in India</span>
+         <h1>Find your treatment.<br><em>Compare clearly.</em></h1>
+         <p>Choose a treatment first. See quotations published by approved agencies. Optional hotel, transport, apartment and language assistance come next.</p>
+         <form id="searchForm" class="searchbar"><label class="sr-only" for="searchInput">Treatment name</label><input id="searchInput" placeholder="e.g. knee replacement, heart blockage, IVF" autocomplete="off"><button class="btn primary" type="submit">Find treatments</button></form>
+         <div id="quickTreatments" class="chips"></div>
+       </div>
+       <div class="hero-art" aria-hidden="true"><div class="hero-circle"><span>✚</span></div><div class="hero-note">Your care journey<br><strong>starts with choice.</strong></div></div>
+     </div>
+     <div class="stepbar" id="stepbar"><div class="step active">1 <span>Treatment</span></div><div class="step">2 <span>Quotations</span></div><div class="step">3 <span>Extras</span></div><div class="step">4 <span>Details</span></div><div class="step">5 <span>Review</span></div></div>
+     <section id="pStep1" class="stage active"><div class="section-heading"><div><span class="eyebrow teal">STEP 01</span><h2>Select a treatment</h2><p>Medical problems and treatments are separate choices. Final suitability must be assessed by a clinician.</p></div></div><div id="treatmentResults" class="cards triple"><div class="card"><span class="tag">Orthopedics</span><h3>Knee Replacement</h3><p>Firebase setup is required before approved provider quotations can load.</p></div><div class="card"><span class="tag">Cardiology</span><h3>Heart Bypass Surgery (CABG)</h3><p>Approved providers and prices will appear here after setup.</p></div><div class="card"><span class="tag">Fertility</span><h3>IVF / Fertility Treatment</h3><p>Public quotation search comes from your Firebase database.</p></div></div></section>
+     <section id="pStep2" class="stage"><div class="section-heading"><div><span class="eyebrow teal">STEP 02</span><h2>Compare quotations</h2><p id="quoteHint">Only approved agencies with this treatment are listed.</p></div><button class="btn secondary" data-back="1">Back</button></div><div class="notice subtle">Rates are agency-published estimates, not a clinical recommendation or confirmed hospital quote. Verify inclusions with the provider.</div><div id="quoteResults" class="cards triple"></div></section>
+     <section id="pStep3" class="stage"><div class="section-heading"><div><span class="eyebrow teal">STEP 03</span><h2>Optional services</h2><p>Skip anything you do not need. All costs below are indicative.</p></div><button class="btn secondary" data-back="2">Back</button></div><div class="two-column"><div id="extrasContent" class="stack"></div><aside id="quoteSummary" class="summary"></aside></div><div class="navigation"><button class="btn secondary" data-back="2">Back</button><button class="btn primary" id="extrasNext">Next: Patient details</button></div></section>
+     <section id="pStep4" class="stage"><div class="section-heading"><div><span class="eyebrow teal">STEP 04</span><h2>Patient information</h2><p>Your personal information is requested only after you choose an agency quotation.</p></div><button class="btn secondary" data-back="3">Back</button></div><div id="patientLoginHint" class="notice subtle">Sign in or create a <strong>Patient</strong> account to submit your booking request. You can compare prices without signing in.</div><form id="patientForm" class="panel form-grid">
+       <label>Patient's full name *<input name="patientName" required maxlength="120" autocomplete="name"></label>
+       <label>Country of residence *<input name="country" required maxlength="90"></label>
+       <label>Phone with country code *<input name="phone" required maxlength="30" placeholder="+44 7123 456789" autocomplete="tel"></label>
+       <label>Email address *<input name="email" type="email" required maxlength="160" autocomplete="email"></label>
+       <label class="wide">Residential address *<textarea name="address" rows="3" required maxlength="600" placeholder="Street, city, postal code, country"></textarea></label>
+       <label class="wide">Current medicines / medical notes (optional)<textarea name="notes" rows="3" maxlength="1500" placeholder="Current medication or doctor's notes, if relevant"></textarea></label>
+       <label class="wide">Prescription (optional, PDF/JPG/PNG/WEBP, max. 10MB)<input type="file" name="prescription" accept="application/pdf,image/jpeg,image/png,image/webp"><small>Cloud Storage must be enabled. Only authorized patient, selected agency and platform admin should be able to access this file.</small></label>
+       <label class="wide checkbox-line"><input type="checkbox" name="consent" required> I consent to sharing these details and optional prescription with my selected medical facility provider for reviewing this booking request.</label>
+       <div class="navigation wide"><button type="button" class="btn secondary" data-back="3">Back</button><button class="btn primary" type="submit">Next: Review quotation</button></div>
+     </form></section>
+     <section id="pStep5" class="stage"><div class="section-heading"><div><span class="eyebrow teal">STEP 05</span><h2>Review and request booking</h2><p>Submitting sends a request to the agency. A hospital appointment is not yet confirmed.</p></div><button class="btn secondary" data-back="4">Back</button></div><div id="reviewContent" class="panel"></div><div class="navigation"><button class="btn secondary" data-back="4">Back</button><button class="btn primary" id="submitBooking">Send booking request</button></div></section>
+     <section id="pStep6" class="stage"><div class="success-panel"><span class="success-icon">✓</span><h2>Request saved</h2><p id="savedText">Your request has been sent.</p><button class="btn primary" id="showMyBookings">View my bookings</button></div></section>
+     <section class="section-spacer" id="myBookings"><div class="section-heading"><div><span class="eyebrow teal">YOUR TRACKING</span><h2>My bookings & appointments</h2><p>Signed-in patients can see their booking updates across phones.</p></div></div><div id="patientBookings" class="cards double"><div class="empty">Sign in as a patient to view your requests.</div></div></section>
+   </section>
+
+   <section class="screen" id="agencyScreen">
+     <div class="dashboard-banner"><div><span class="eyebrow">MEDICAL PROVIDER PORTAL</span><h1>Agency Dashboard</h1><p>Manage your company registration, treatment rates, optional services and appointment requests.</p></div><div class="banner-icon">✚</div></div>
+     <div id="agencyGate" class="notice subtle">Sign in using an Agency account to manage your medical provider profile.</div>
+     <div id="agencyWorkspace" hidden>
+       <div id="agencyStatus" class="notice"></div>
+       <div class="section-heading"><div><h2>Agency registration & rates</h2><p>New listings remain pending until admin publishes your agency quotation.</p></div></div>
+       <form id="agencyForm" class="panel form-grid">
+         <label>Registered company name *<input name="name" required maxlength="150"></label>
+         <label>Company owner name *<input name="owner" required maxlength="150"></label>
+         <label>GSTIN *<input name="gst" required maxlength="15" placeholder="15-character GSTIN"></label>
+         <label>Registration / license number *<input name="licence" required maxlength="100"></label>
+         <label>Licence type / issuing authority *<input name="licenceType" required maxlength="100"></label>
+         <label>City *<input name="city" required maxlength="100"></label>
+         <label class="wide">Hospital tie-ups (one hospital per line) *<textarea name="hospitals" rows="3" required placeholder="Hospital one&#10;Hospital two"></textarea></label>
+         <div class="wide"><h3>Treatment-wise quoted rates (INR)</h3><p class="muted">Leave a rate blank to exclude that treatment from your listing.</p><div id="rateFields" class="rate-grid"></div></div>
+         <div class="wide"><h3>Hotels (name | star category | price per night)</h3><p class="muted">One hotel per line. Example: <code>Hotel Example | 4 Star | 7500</code></p><textarea name="hotels" rows="4" placeholder="Hotel Example | 4 Star | 7500"></textarea></div>
+         <div class="wide"><h3>Apartments (name | price per night)</h3><textarea name="apartments" rows="3" placeholder="City Serviced Apartment | 5300"></textarea></div>
+         <div class="wide"><h3>Language assistants (language | rate per day)</h3><textarea name="assistants" rows="3" placeholder="English | 2200&#10;Arabic | 3300"></textarea></div>
+         <div class="wide"><h3>Transportation (service | rate per unit)</h3><p class="muted">Enter only services you actually provide, one per line.</p><textarea name="transport" rows="5" placeholder="Airport pickup and drop | 1800&#10;Hospital transportation | 1200&#10;City exploration / shopping | 2700&#10;Sightseeing / tourist places | 3200&#10;Outstation trips | 6200&#10;Wheelchair-accessible vehicle | 3900"></textarea></div>
+         <div class="wide"><button class="btn primary" type="submit" id="saveAgencyBtn">Save agency profile for review</button></div>
+       </form>
+       <div class="section-heading section-spacer"><div><h2>Patient requests to your agency</h2><p>Only bookings addressed to your agency appear here.</p></div></div>
+       <div class="cards double" id="agencyBookings"></div>
+     </div>
+   </section>
+
+   <section class="screen" id="adminScreen">
+     <div class="dashboard-banner"><div><span class="eyebrow">PLATFORM ADMINISTRATION</span><h1>Admin Dashboard</h1><p>Review providers, publish approved listings, and monitor medical tourism booking requests.</p></div><div class="banner-icon">✦</div></div>
+     <div id="adminGate" class="notice subtle">Only the Firebase project owner can grant Admin access by setting a protected user role in Firestore.</div>
+     <div id="adminWorkspace" hidden>
+       <div class="section-heading"><div><h2>Provider review and publication</h2><p>Approval publishes an agency's current quotation and services to the public marketplace.</p></div></div>
+       <div id="adminAgencies" class="cards double"></div>
+       <div class="section-heading section-spacer"><div><h2>All booking requests</h2><p>Monitoring only. Hospital appointment confirmation remains an agency responsibility.</p></div></div>
+       <div id="adminBookings" class="cards double"></div>
+     </div>
+   </section>
+ </main>
+ <footer><div class="container footer-grid"><div><strong>MK Medical Care</strong><p>Global Patients. Trusted Indian Care.</p></div><div class="footer-disclaimer">This platform does not make medical decisions. A clinician must assess suitability, final costs and appointment eligibility. Agency names, rates and bookings remain empty until real providers register and are approved.</div></div></footer>
+
+ <dialog id="authDialog" class="auth-dialog"><form id="authForm" class="auth-box"><button type="button" class="close" id="authClose" aria-label="Close dialog">×</button><span class="eyebrow teal">SECURE ACCOUNT</span><h2 id="authTitle">Sign in</h2><p id="authHelp" class="muted">Use an email and password to access your private dashboard.</p><label id="authNameWrap">Name <input id="authName" autocomplete="name" placeholder="Your name" hidden></label><label>Email <input id="authEmail" type="email" required autocomplete="email"></label><label>Password <input id="authPassword" type="password" required minlength="6" autocomplete="current-password"></label><label id="authRoleWrap" hidden>Account type<select id="authRole"><option value="patient">Patient</option><option value="agency">Medical Agency</option></select></label><button class="btn primary fullwidth" id="authSubmit" type="submit">Sign in</button><button type="button" class="btn linkbtn" id="authSwap">Create a new account</button><div id="authError" class="notice error" hidden></div></form></dialog>
+ <script type="module">
+/*
+ * MK Medical Care — Firebase-connected MVP
+ * Security is enforced in Firestore & Storage rules, NEVER by these UI checks alone.
+ * Frontend figures are indicative. Clinical / appointment verification remains external.
+ */
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js';
+import {
+  getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,
+  signOut, onAuthStateChanged, updateProfile
+} from 'https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js';
+import {
+  getFirestore, collection, doc, addDoc, setDoc, updateDoc, deleteDoc,
+  getDoc, onSnapshot, query, where, writeBatch, serverTimestamp
+} from 'https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js';
+import {getStorage, ref, uploadBytes, getBytes, getMetadata} from 'https://www.gstatic.com/firebasejs/12.0.0/firebase-storage.js';
+const firebaseConfig = {
+  apiKey: "AIzaSyCCnEYmwf-0VVLo4ouQy8OHB9OE_kLwJdI",
+  authDomain: "mk-medical-care.firebaseapp.com",
+  projectId: "mk-medical-care",
+  storageBucket: "mk-medical-care.firebasestorage.app",
+  messagingSenderId: "131968843286",
+  appId: "1:131968843286:web:b3a48cfeb7e78995dbbf37",
+  measurementId: "G-Y8X2H0W7MH"
+};
+
+
+const treatments = [
+  ['knee','Knee Replacement','Orthopedics','knee pain knee osteoarthritis arthroplasty'],
+  ['hip','Hip Replacement','Orthopedics','hip pain arthroplasty'],
+  ['cabg','Heart Bypass Surgery (CABG)','Cardiology','heart blockage coronary artery disease bypass surgery'],
+  ['angioplasty','Coronary Angioplasty','Cardiology','heart blockage stent angioplasty coronary'],
+  ['ivf','IVF / Fertility Treatment','Fertility','ivf infertility fertility'],
+  ['dental','Dental Implants','Dental','dental implants teeth'],
+  ['spine','Spine Surgery','Neurosurgery','spine disc back pain'],
+  ['kidney','Kidney Stone Treatment','Urology','kidney stone lithotripsy'],
+  ['cataract','Cataract Surgery','Eye care','cataract eyesight'],
+  ['oncology','Cancer Treatment Consultation','Oncology','cancer chemotherapy oncology'],
+  ['brain','Brain Tumor Surgery','Neurosurgery','brain tumour brain tumor'],
+  ['liver','Liver Transplant Evaluation','Transplant','liver transplant evaluation'],
+  ['ent','Cochlear Implant','ENT','cochlear hearing implant'],
+  ['bariatric','Bariatric Surgery','Weight management','bariatric weight loss surgery'],
+  ['hysterectomy','Hysterectomy','Gynecology','hysterectomy uterine'],
+  ['prostate','Prostate Surgery','Urology','prostate turp'],
+  ['shoulder','Shoulder Replacement','Orthopedics','shoulder pain replacement'],
+  ['cosmetic','Reconstructive Plastic Surgery','Plastic surgery','cosmetic reconstructive plastic surgery']
+].map(([id,name,category,keywords])=>({id,name,category,keywords}));
+
+let app=null, auth=null, db=null, storage=null;
+let ready=false, signedUser=null, profile=null, activeScreen='patient', patientStep=1;
+let published=[], patientBookings=[], agencyBookings=[], adminBookings=[], adminAgencies=[], ownAgency=null;
+let unsubPublic=null, unsubRole=[];
+let authMode='login';
+let currentTreatment=null, currentListing=null;
+let currentExtras={stayType:'',stayIndex:'',nights:1,assistantIndex:'',assistantDays:1,transport:{}};
+let bookingFormValues=null, bookingFile=null;
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const currency=n=>'₹'+Number(n||0).toLocaleString('en-IN');
+const errText=e=>e?.message?.replace(/^Firebase: /,'') || String(e||'Unknown error');
+const getT=id=>treatments.find(t=>t.id===id);
+const selectedPrice=()=>Number(currentListing?.rates?.[currentTreatment?.id]||0);
+const safeValue=(n,def=1)=>Math.max(1,Math.min(90,Math.round(Number(n)||def)));
+const sorted=arr=>[...arr].sort((a,b)=>(b.createdAt?.seconds||0)-(a.createdAt?.seconds||0));
+function notify(msg,error=false){const e=$('#message');e.textContent=msg;e.className='notice global-notice'+(error?' error':'');e.hidden=false;window.scrollTo({top:0,behavior:'smooth'});}
+function clearNotice(){$('#message').hidden=true;}
+function configOK(){return firebaseConfig.apiKey&&!firebaseConfig.apiKey.includes('PASTE')&&!firebaseConfig.projectId.includes('YOUR_')&&!firebaseConfig.appId.includes('PASTE');}
+
+function init(){
+  renderTreatments();
+  $('#quickTreatments').innerHTML=['Knee Replacement','Heart Bypass Surgery','Angioplasty','IVF'].map(s=>`<button type="button" data-quick="${esc(s)}">${esc(s)}</button>`).join('');
+  renderQuotes();
+  renderMyBookings();
+  renderRoleGates();
+  if(!configOK()){$('#setupBanner').hidden=false;notify('Website frontend loaded. To connect the three dashboards across phones, complete Firebase setup as described in README_HINDI.md.');return;}
+  try{
+    app=initializeApp(firebaseConfig);auth=getAuth(app);db=getFirestore(app);storage=getStorage(app);ready=true;
+    $('#setupBanner').hidden=true;
+    startPublicListener();
+    onAuthStateChanged(auth, async user=>{
+      signedUser=user;profile=null;clearRoleListeners();
+      ownAgency=null;patientBookings=[];agencyBookings=[];adminBookings=[];adminAgencies=[];
+      if(user){
+        try {const u=await getDoc(doc(db,'users',user.uid)); if(u.exists())profile=u.data(); else notify('Account exists but user role has not been created. Contact the platform administrator.',true);}
+        catch(e){notify('Cannot load account permissions: '+errText(e),true);}
+      }
+      refreshAccountUI();
+      if(signedUser&&profile)startRoleListeners();
+    });
+  }catch(e){$('#setupBanner').hidden=false;notify('Firebase could not initialize: '+errText(e),true);}
+}
+
+function startPublicListener(){
+  unsubPublic=onSnapshot(query(collection(db,'listings'),where('status','==','approved')),snap=>{
+    published=snap.docs.map(d=>({id:d.id,...d.data()}));
+    renderQuotes();renderTreatments();
+    if(currentListing&&!published.some(l=>l.id===currentListing.id)){
+      currentListing=null;patientStep=2;showPatientStep(2);
+      notify('Selected agency is no longer published. Please choose another listing.',true);
+    }
+  },e=>notify('Cannot load public quotations. If your Firestore Rules are still in production locked mode, publish and test the restricted rules file first. Detail: '+errText(e),true));
+}
+function clearRoleListeners(){unsubRole.forEach(f=>{try{f()}catch(_){}});unsubRole=[];}
+function addRoleListener(q,setter){unsubRole.push(onSnapshot(q,snap=>setter(snap.docs.map(d=>({id:d.id,...d.data()}))),e=>notify('Live data update failed: '+errText(e),true)));}
+function startRoleListeners(){
+  if(profile.role==='patient')addRoleListener(query(collection(db,'bookings'),where('patientUid','==',signedUser.uid)),a=>{patientBookings=sorted(a);renderMyBookings();});
+  if(profile.role==='agency'){
+    unsubRole.push(onSnapshot(doc(db,'agencies',signedUser.uid),snap=>{ownAgency=snap.exists()?{id:snap.id,...snap.data()}:null;renderAgency();},e=>notify(errText(e),true)));
+    addRoleListener(query(collection(db,'bookings'),where('agencyUid','==',signedUser.uid)),a=>{agencyBookings=sorted(a);renderAgencyBookings();});
+  }
+  if(profile.role==='admin'){
+    addRoleListener(collection(db,'agencies'),a=>{adminAgencies=a;renderAdmin();});
+    addRoleListener(collection(db,'bookings'),a=>{adminBookings=sorted(a);renderAdmin();});
+  }
+}
+function refreshAccountUI(){
+  $('#userTag').textContent=signedUser?(profile?.role?.toUpperCase()||'Account pending'):'Guest';
+  $('#authTop').hidden=!!signedUser;
+  $('#logoutBtn').hidden=!signedUser;
+  $('#patientLoginHint').textContent=profile?.role==='patient'?'You are signed in as a patient. Your request will be saved to your private account.':
+    'Sign in or create a Patient account before sending the booking request. Public quotations do not require login.';
+  renderMyBookings();renderAgency();renderAdmin();
+}
+function renderRoleGates(){
+  $('#agencyGate').textContent='Sign in using an Agency account to manage your medical provider profile.';
+  $('#adminGate').textContent='Only the Firebase project owner can grant Admin access by setting a protected user role in Firestore.';
+}
+function changeScreen(screen){
+  activeScreen=screen;
+  $$('.screen').forEach(e=>e.classList.toggle('active',e.id===screen+'Screen'));
+  $$('.tab').forEach(e=>e.classList.toggle('active',e.dataset.screen===screen));
+  clearNotice();window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function renderTreatments(){
+  let q=$('#searchInput').value.trim().toLowerCase();
+  let choices=treatments.filter(t=>!q||(t.name+' '+t.category+' '+t.keywords).toLowerCase().includes(q));
+  $('#treatmentResults').innerHTML=choices.length?choices.map(t=>{
+    let count=published.filter(l=>Number(l.rates?.[t.id])>0).length;
+    return `<article class="card"><span class="tag">${esc(t.category)}</span><h3 style="margin-top:13px">${esc(t.name)}</h3><p>${count} approved ${count===1?'provider':'providers'} currently published</p><div class="bottom"><span class="muted">Treatments are clinician-led</span><button class="btn primary" data-treatment="${esc(t.id)}">View quotations</button></div></article>`;
+  }).join(''):'<div class="empty">No treatments match. Try “heart blockage” or “knee replacement”.</div>';
+}
+function renderQuotes(){
+  if(!currentTreatment){$('#quoteResults').innerHTML='<div class="empty">Select a treatment first.</div>';return;}
+  $('#quoteHint').textContent=`Only agency quotations for ${currentTreatment.name} are shown. Verify what the price includes.`;
+  const results=published.filter(l=>Number(l.rates?.[currentTreatment.id])>0).sort((a,b)=>Number(a.rates[currentTreatment.id])-Number(b.rates[currentTreatment.id]));
+  $('#quoteResults').innerHTML=results.length?results.map(l=>`<article class="card ${currentListing?.id===l.id?'selected':''}"><span class="tag">${esc(l.city)}</span><h3 style="margin-top:12px">${esc(l.name)}</h3><div class="price">${currency(l.rates[currentTreatment.id])}</div><small>Treatment quotation · INR</small><div class="hospital"><b>Hospital tie-ups declared by agency:</b><br>${(l.hospitals||[]).map(esc).join('<br>')||'Hospital information not listed'}</div><div class="bottom"><small>Admin-published listing</small><button class="btn primary" data-choose-listing="${esc(l.id)}">${currentListing?.id===l.id?'Selected →':'Choose quotation'}</button></div></article>`).join(''):'<div class="empty">No approved agency has published a quotation for this treatment yet. Please try another treatment later.</div>';
+}
+function showPatientStep(step){
+  patientStep=step;
+  $$('.stage').forEach(e=>e.classList.toggle('active',e.id==='pStep'+step));
+  $$('#stepbar .step').forEach((e,i)=>e.classList.toggle('active',i<step && step<=5 || step===6));
+  if(step===3)renderExtras();
+  if(step===5)renderReview();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function buildExtras(){
+  const services=[];const l=currentListing;if(!l)return services;
+  const stays=currentExtras.stayType==='hotel'?(l.hotels||[]):(l.apartments||[]);
+  if(currentExtras.stayType&&currentExtras.stayIndex!==''){
+    const s=stays[Number(currentExtras.stayIndex)];if(s){let qty=safeValue(currentExtras.nights);services.push({kind:currentExtras.stayType,label:s.name,qty,unitPrice:Number(s.rate),amount:Number(s.rate)*qty,unit:'night'});}
+  }
+  if(currentExtras.assistantIndex!==''){
+    const s=(l.assistants||[])[Number(currentExtras.assistantIndex)];if(s){let qty=safeValue(currentExtras.assistantDays);services.push({kind:'assistant',label:s.language+' language assistant',qty,unitPrice:Number(s.rate),amount:Number(s.rate)*qty,unit:'day'});}
+  }
+  for(const [k,v] of Object.entries(currentExtras.transport)){
+    const s=(l.transport||[])[Number(k)];if(s){let qty=safeValue(v);services.push({kind:'transport',label:s.name,qty,unitPrice:Number(s.rate),amount:Number(s.rate)*qty,unit:'trip/day'});}
+  }
+  return services;
+}
+function totalEstimate(){return selectedPrice()+buildExtras().reduce((n,s)=>n+s.amount,0);}
+function renderExtras(){
+  const l=currentListing;if(!l)return;
+  let content='';
+  content+=`<section class="panel"><h3>Hotel or apartment</h3><p>Names and rates are supplied by the selected agency.</p><label class="field">Accommodation type<select id="stayType"><option value="">No accommodation</option><option value="hotel" ${currentExtras.stayType==='hotel'?'selected':''}>Hotel</option><option value="apartment" ${currentExtras.stayType==='apartment'?'selected':''}>Apartment</option></select></label>`;
+  if(currentExtras.stayType){const arr=currentExtras.stayType==='hotel'?(l.hotels||[]):(l.apartments||[]);
+    content+=`<label class="field" style="margin-top:12px">Select ${esc(currentExtras.stayType)}<select id="stayIndex"><option value="">No stay selected</option>${arr.map((s,i)=>`<option value="${i}" ${String(i)===String(currentExtras.stayIndex)?'selected':''}>${esc(s.name)} ${s.category?'· '+esc(s.category):''} · ${currency(s.rate)}/night</option>`).join('')}</select></label><label class="field" style="margin-top:12px">Number of nights<input id="stayNights" type="number" min="1" max="90" value="${safeValue(currentExtras.nights)}"></label>`;
+    if(!arr.length)content+='<p class="muted">No stay listings offered by this agency.</p>';
+  }
+  content+='</section>';
+  content+=`<section class="panel"><h3>Full-time language assistant</h3><label class="field">Assistant language<select id="assistantIndex"><option value="">No assistant required</option>${(l.assistants||[]).map((a,i)=>`<option value="${i}" ${String(i)===String(currentExtras.assistantIndex)?'selected':''}>${esc(a.language)} — ${currency(a.rate)}/day</option>`).join('')}</select></label>`;
+  if(currentExtras.assistantIndex!=='')content+=`<label class="field" style="margin-top:12px">Number of days<input id="assistantDays" type="number" min="1" max="90" value="${safeValue(currentExtras.assistantDays)}"></label>`;
+  content+='</section>';
+  content+=`<section class="panel"><h3>Transportation</h3><p>Choose only the services you need.</p>${(l.transport||[]).length?(l.transport||[]).map((t,i)=>`<div class="option-line"><label><input type="checkbox" data-transport="${i}" ${currentExtras.transport[i]?'checked':''}> ${esc(t.name)} — ${currency(t.rate)}/unit</label>${currentExtras.transport[i]?`<label class="field">Trips / days<input type="number" min="1" max="90" data-transport-qty="${i}" value="${safeValue(currentExtras.transport[i])}"></label>`:''}</div>`).join(''):'<p>No transport options published by this agency.</p>'}</section>`;
+  $('#extrasContent').innerHTML=content;renderSummary();
+}
+function renderSummary(){
+  $('#quoteSummary').innerHTML=`<h3>Quotation estimate</h3><div class="rowline"><span>${esc(currentTreatment?.name)}</span><strong>${currency(selectedPrice())}</strong></div>`+buildExtras().map(s=>`<div class="rowline"><span>${esc(s.label)} × ${s.qty}</span><strong>${currency(s.amount)}</strong></div>`).join('')+`<div class="rowline total"><strong>Estimated total</strong><strong>${currency(totalEstimate())}</strong></div><p class="muted" style="font-size:12px">Not a final hospital bill. Extras and treatment availability require provider confirmation.</p>`;
+}
+function extraChange(el){
+  if(el.id==='stayType'){currentExtras.stayType=el.value;currentExtras.stayIndex='';renderExtras();return;}
+  if(el.id==='stayIndex')currentExtras.stayIndex=el.value;
+  if(el.id==='stayNights')currentExtras.nights=safeValue(el.value);
+  if(el.id==='assistantIndex'){currentExtras.assistantIndex=el.value;renderExtras();return;}
+  if(el.id==='assistantDays')currentExtras.assistantDays=safeValue(el.value);
+  if(el.dataset.transport!==undefined){if(el.checked)currentExtras.transport[el.dataset.transport]=1;else delete currentExtras.transport[el.dataset.transport];renderExtras();return;}
+  if(el.dataset.transportQty!==undefined)currentExtras.transport[el.dataset.transportQty]=safeValue(el.value);
+  renderSummary();
+}
+function formDataToPatient(form){let fd=new FormData(form);return {name:String(fd.get('patientName')||'').trim(),country:String(fd.get('country')||'').trim(),phone:String(fd.get('phone')||'').trim(),email:String(fd.get('email')||'').trim(),address:String(fd.get('address')||'').trim(),notes:String(fd.get('notes')||'').trim()};}
+function toReview(form){
+  if(!ready){notify('Connect Firebase first, then sign in to save requests.',true);return;}
+  if(!signedUser||profile?.role!=='patient'){openAuth('patient');notify('Please sign in with a Patient account before submitting private details.',true);return;}
+  if(!currentListing||!currentTreatment){notify('Select an approved provider quotation first.',true);return;}
+  bookingFormValues=formDataToPatient(form);bookingFile=form.elements.prescription.files?.[0]||null;
+  if(bookingFile){if(bookingFile.size>10*1024*1024||!['application/pdf','image/jpeg','image/png','image/webp'].includes(bookingFile.type)){notify('Prescription must be a PDF/JPG/PNG/WEBP under 10 MB.',true);return;}}
+  showPatientStep(5);
+}
+function renderReview(){
+  const patient=bookingFormValues||{};const services=buildExtras();
+  $('#reviewContent').innerHTML=`<div class="cards double"><div><h3>Selected quotation</h3><div class="rowline"><span>Treatment</span><b>${esc(currentTreatment?.name)}</b></div><div class="rowline"><span>Agency</span><b>${esc(currentListing?.name)}</b></div><div class="rowline"><span>City</span><b>${esc(currentListing?.city)}</b></div><div class="rowline"><span>Treatment estimate</span><b>${currency(selectedPrice())}</b></div><h3 style="margin-top:24px">Selected extras</h3>${services.map(s=>`<div class="rowline"><span>${esc(s.label)} × ${s.qty}</span><b>${currency(s.amount)}</b></div>`).join('')||'<p>None selected</p>'}<div class="rowline total"><strong>Estimated total</strong><strong>${currency(totalEstimate())}</strong></div></div><div><h3>Patient</h3><div class="rowline"><span>Name</span><b>${esc(patient.name)}</b></div><div class="rowline"><span>Country</span><b>${esc(patient.country)}</b></div><div class="rowline"><span>Phone</span><b>${esc(patient.phone)}</b></div><div class="rowline"><span>Email</span><b>${esc(patient.email)}</b></div><div class="rowline"><span>Address</span><b>${esc(patient.address)}</b></div><div class="rowline"><span>Prescription</span><b>${bookingFile?esc(bookingFile.name):'Not attached'}</b></div></div></div><div class="notice subtle">Booking status starts as <b>Requested</b>. The hospital appointment is not confirmed until the agency obtains hospital confirmation and updates the booking.</div>`;
+}
+async function createBooking(){
+  if(!ready||!signedUser||profile?.role!=='patient')return notify('Patient sign-in is required.',true);
+  if(!currentListing||!currentTreatment||!bookingFormValues)return notify('Complete the patient form first.',true);
+  const button=$('#submitBooking');button.disabled=true;button.textContent='Saving request...';
+  try{
+    const services=buildExtras();
+    const booking={
+      patientUid:signedUser.uid,agencyUid:currentListing.id,treatmentId:currentTreatment.id,
+      basePrice:selectedPrice(),estimatedTotal:totalEstimate(),services,
+      patient:bookingFormValues,consent:true,status:'requested',appointment:null,providerNote:'',
+      prescriptionName:bookingFile?.name?.slice(0,160)||'',createdAt:serverTimestamp(),updatedAt:serverTimestamp()
+    };
+    const d=await addDoc(collection(db,'bookings'),booking);
+    let fileMessage='';
+    if(bookingFile){
+      try{await uploadBytes(ref(storage,`prescriptions/${d.id}/prescription`),bookingFile,{contentType:bookingFile.type});fileMessage=' Prescription uploaded securely.';}
+      catch(e){fileMessage=' Prescription was NOT uploaded ('+errText(e)+'). The booking request was saved without that file.';}
+    }
+    $('#savedText').textContent=`Request ID: ${d.id}. The agency can now review the request. Appointment status remains pending until hospital confirmation.${fileMessage}`;
+    showPatientStep(6);notify('Booking request saved to Firestore.'+fileMessage,fileMessage.includes('NOT uploaded'));
+  }catch(e){notify('Could not save booking: '+errText(e),true);}finally{button.disabled=false;button.textContent='Send booking request';}
+}
+
+function appointmentHTML(b){if(!b.appointment?.date)return '<span class="tag">Awaiting hospital appointment</span>';
+  return `<div class="hospital"><b>${b.status==='confirmed'?'Hospital-confirmed appointment (agency declaration)':'Proposed date — not yet confirmed'}</b><br>${esc(b.appointment.hospital)} · ${esc(b.appointment.date)} at ${esc(b.appointment.time)}</div>`;
+}
+function statusTag(s){return `<span class="tag">${esc(({requested:'Requested',reviewing:'Under review',date_proposed:'Date proposed',confirmed:'Confirmed by agency',declined:'Declined'})[s]||s)}</span>`;}
+function renderMyBookings(){
+  const host=$('#patientBookings');
+  if(profile?.role!=='patient')return host.innerHTML='<div class="empty">Sign in with a Patient account to see private booking updates.</div>';
+  host.innerHTML=patientBookings.length?patientBookings.map(b=>`<article class="card"><div class="bottom" style="margin-top:0">${statusTag(b.status)}<small>Ref: ${esc(b.id.slice(0,12))}</small></div><h3 style="margin-top:16px">${esc(getT(b.treatmentId)?.name||b.treatmentId)}</h3><p>Agency: ${esc(published.find(l=>l.id===b.agencyUid)?.name||'Selected provider')}</p><div class="rowline"><span>Quoted estimate at request</span><b>${currency(b.estimatedTotal)}</b></div>${appointmentHTML(b)}<p style="margin-top:12px">${esc(b.providerNote||'Provider review pending')}</p>${b.prescriptionName?`<button class="btn secondary" data-prescription="${esc(b.id)}">Download prescription (authorized only)</button>`:''}</article>`).join(''):'<div class="empty">No booking requests yet. Search a treatment to begin.</div>';
+}
+async function downloadPrescription(bookingId){
+  if(!ready||!signedUser)return notify('Sign in to access your prescription.',true);
+  try{
+    const r=ref(storage,`prescriptions/${bookingId}/prescription`);
+    const [bytes,meta]=await Promise.all([getBytes(r,10*1024*1024+1),getMetadata(r)]);
+    const blob=new Blob([bytes],{type:meta.contentType||'application/octet-stream'});
+    const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;
+    const ext=meta.contentType==='application/pdf'?'.pdf':meta.contentType==='image/png'?'.png':meta.contentType==='image/webp'?'.webp':'.jpg';
+    link.download='prescription-'+bookingId.slice(0,9)+ext;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);
+  }catch(e){notify('File cannot be accessed (perhaps it was not uploaded): '+errText(e),true);}
+}
+
+function parseLines(text,kind){
+  const items=[];
+  for(const row of String(text||'').split('\n').map(x=>x.trim()).filter(Boolean)){
+    const parts=row.split('|').map(x=>x.trim());
+    if((kind==='hotels'&&parts.length!==3)||(kind!=='hotels'&&parts.length!==2))throw new Error('Incorrect '+kind+' line: '+row+'. Use | separators as shown.');
+    const val=Number(parts.at(-1));if(!Number.isFinite(val)||val<=0||val>10000000)throw new Error('Invalid positive rate in: '+row);
+    if(kind==='hotels')items.push({name:parts[0].slice(0,140),category:parts[1].slice(0,50),rate:Math.round(val)});
+    if(kind==='apartments')items.push({name:parts[0].slice(0,140),rate:Math.round(val)});
+    if(kind==='assistants')items.push({language:parts[0].slice(0,80),rate:Math.round(val)});
+    if(kind==='transport')items.push({name:parts[0].slice(0,140),rate:Math.round(val)});
+  }
+  if(items.length>40)throw new Error('Please limit each optional service category to 40 entries.');
+  return items;
+}
+function toLines(arr,kind){return (arr||[]).map(o=>kind==='hotels'?[o.name,o.category,o.rate].join(' | '):kind==='apartments'?[o.name,o.rate].join(' | '):kind==='assistants'?[o.language,o.rate].join(' | '):[o.name,o.rate].join(' | ')).join('\n');}
+function fillAgencyForm(){
+  let f=$('#agencyForm');let a=ownAgency||{};
+  for(const name of ['name','owner','gst','licence','licenceType','city'])f.elements[name].value=a[name]||'';
+  f.elements.hospitals.value=(a.hospitals||[]).join('\n');
+  for(const t of treatments){const field=f.querySelector(`[data-rate="${t.id}"]`);if(field)field.value=a.rates?.[t.id]??'';}
+  for(const kind of ['hotels','apartments','assistants','transport'])f.elements[kind].value=toLines(a[kind],kind);
+}
+function renderAgency(){
+  const allowed=!!(ready&&signedUser&&profile?.role==='agency');
+  $('#agencyWorkspace').hidden=!allowed;$('#agencyGate').hidden=allowed;
+  if(!allowed){$('#agencyGate').textContent=profile?'Only users with the Agency role can use this dashboard.':'Create an Agency account or sign in to manage provider details.';return;}
+  $('#agencyStatus').textContent=ownAgency?`Current status: ${ownAgency.status.toUpperCase()} · Changes to rates need admin re-publication before patients see them.`:'No agency profile saved. Fill the company registration form below.';
+  fillAgencyForm();renderAgencyBookings();
+}
+async function saveAgency(ev){
+  ev.preventDefault();if(!ready||profile?.role!=='agency'||!signedUser)return notify('Agency sign-in required.',true);
+  const f=ev.currentTarget;const fd=new FormData(f);let rates={};
+  for(const t of treatments){const v=f.querySelector(`[data-rate="${t.id}"]`).value.trim();if(v){const num=Number(v);if(!Number.isFinite(num)||num<=0||num>100000000)return notify('Invalid treatment rate for '+t.name,true);rates[t.id]=Math.round(num);}}
+  if(!Object.keys(rates).length)return notify('Please quote at least one treatment.',true);
+  try{
+    const values={
+      name:String(fd.get('name')||'').trim().slice(0,150),owner:String(fd.get('owner')||'').trim().slice(0,150),
+      gst:String(fd.get('gst')||'').trim().toUpperCase(),licence:String(fd.get('licence')||'').trim().slice(0,100),
+      licenceType:String(fd.get('licenceType')||'').trim().slice(0,100),city:String(fd.get('city')||'').trim().slice(0,100),
+      hospitals:String(fd.get('hospitals')||'').split('\n').map(x=>x.trim().slice(0,140)).filter(Boolean).slice(0,30),
+      rates,hotels:parseLines(fd.get('hotels'),'hotels'),apartments:parseLines(fd.get('apartments'),'apartments'),
+      assistants:parseLines(fd.get('assistants'),'assistants'),transport:parseLines(fd.get('transport'),'transport'),
+      updatedAt:serverTimestamp()
+    };
+    if(!/^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][0-9A-Z]Z[0-9A-Z]$/.test(values.gst))throw new Error('Enter a valid 15-character GSTIN format.');
+    if(!values.hospitals.length)throw new Error('List at least one hospital tie-up (verify the contract before approval).');
+    const refDoc=doc(db,'agencies',signedUser.uid);
+    if(ownAgency){await updateDoc(refDoc,values);}else{await setDoc(refDoc,{...values,ownerUid:signedUser.uid,status:'pending',createdAt:serverTimestamp()});}
+    notify('Agency profile saved. An administrator must review and publish this listing before patients can see the quotation.');
+  }catch(e){notify('Agency profile not saved: '+errText(e),true);}
+}
+function renderAgencyBookings(){
+  const host=$('#agencyBookings');if(profile?.role!=='agency'){host.innerHTML='';return;}
+  host.innerHTML=agencyBookings.length?agencyBookings.map(b=>`<article class="card"><div class="bottom" style="margin:0">${statusTag(b.status)}<small>${esc(b.id.slice(0,12))}</small></div><h3 style="margin-top:16px">${esc(getT(b.treatmentId)?.name||b.treatmentId)}</h3><p>${esc(b.patient?.name)}, ${esc(b.patient?.country)}<br>${esc(b.patient?.phone)} · ${esc(b.patient?.email)}<br><strong>Address:</strong> ${esc(b.patient?.address)}<br><strong>Current medicines / notes:</strong> ${esc(b.patient?.notes||'Not provided')}</p><div class="rowline"><span>Estimate submitted by patient</span><strong>${currency(b.estimatedTotal)}</strong></div><p>${esc((b.services||[]).map(s=>s.label+' × '+s.qty).join(' • ')||'No add-ons selected')}</p>${b.prescriptionName?`<button class="btn secondary" type="button" data-prescription="${esc(b.id)}">Download prescription</button>`:''}${appointmentHTML(b)}<form class="booking-update" data-id="${esc(b.id)}"><h3 style="margin-top:20px">Appointment status</h3><label class="field">Status<select name="status"><option value="reviewing">Under review</option><option value="date_proposed">Date proposed (not confirmed)</option><option value="confirmed">Confirmed by hospital</option><option value="declined">Declined</option></select></label><label class="field">Hospital<input name="hospital" maxlength="160" value="${esc(b.appointment?.hospital||'')}"></label><div class="form-grid"><label class="field">Date<input name="date" type="date" value="${esc(b.appointment?.date||'')}"></label><label class="field">Time<input name="time" type="time" value="${esc(b.appointment?.time||'')}"></label></div><label class="field">Provider note<textarea name="note" rows="2" maxlength="700">${esc(b.providerNote||'')}</textarea></label><label class="checkbox-line"><input type="checkbox" name="hospitalConfirmed"> I have obtained confirmation directly from the hospital (required for confirmed status)</label><button class="btn primary" type="submit" style="margin-top:12px">Save appointment status</button></form></article>`).join(''):'<div class="empty">No patient bookings have been addressed to your agency yet.</div>';
+}
+async function updateAppointment(form){
+  if(!ready||profile?.role!=='agency')return;
+  const b=agencyBookings.find(x=>x.id===form.dataset.id);if(!b)return;
+  const fd=new FormData(form),status=String(fd.get('status'));
+  const hospital=String(fd.get('hospital')||'').trim(),date=String(fd.get('date')||'').trim(),time=String(fd.get('time')||'').trim();
+  const declared=fd.get('hospitalConfirmed')==='on';
+  if(['date_proposed','confirmed'].includes(status)&&(!hospital||!date||!time))return notify('Enter hospital, date and time for a proposed or confirmed appointment.',true);
+  if(status==='confirmed'&&!declared)return notify('Confirm that the hospital has actually approved this date/time before marking confirmed.',true);
+  try{
+    await updateDoc(doc(db,'bookings',b.id),{status,appointment:{hospital,date,time,hospitalConfirmed:status==='confirmed'&&declared},providerNote:String(fd.get('note')||'').slice(0,700),updatedAt:serverTimestamp()});
+    notify('Booking updated. The patient sees the new status via Firestore realtime sync.');
+  }catch(e){notify('Could not update appointment: '+errText(e),true);}
+}
+
+function renderAdmin(){
+  const allowed=!!(ready&&signedUser&&profile?.role==='admin');
+  $('#adminWorkspace').hidden=!allowed;$('#adminGate').hidden=allowed;
+  if(!allowed){$('#adminGate').textContent='Admin access is not self-assignable. Project owner must set users/<UID>/role = admin in the Firebase Console after account creation.';return;}
+  $('#adminAgencies').innerHTML=adminAgencies.length?adminAgencies.map(a=>`<article class="card"><div class="bottom" style="margin:0"><span class="tag">${esc(a.status)}</span><small>Agency UID ${esc(a.id.slice(0,12))}</small></div><h3 style="margin-top:14px">${esc(a.name)}</h3><p><b>Owner:</b> ${esc(a.owner)}<br><b>City:</b> ${esc(a.city)}<br><b>GSTIN:</b> ${esc(a.gst)}<br><b>Licence:</b> ${esc(a.licence)} (${esc(a.licenceType)})</p><div class="hospital"><strong>Declared hospital tie-ups</strong><br>${(a.hospitals||[]).map(esc).join('<br>')}</div><p style="margin-top:13px">${Object.keys(a.rates||{}).length} treatments · ${(a.hotels||[]).length} named hotels · ${(a.transport||[]).length} transport services</p><div class="bottom"><button class="btn primary" data-admin-action="publish" data-id="${esc(a.id)}">Approve / Republish</button><button class="btn secondary" data-admin-action="pending" data-id="${esc(a.id)}">Pending</button><button class="btn secondary" data-admin-action="suspend" data-id="${esc(a.id)}">Suspend</button></div></article>`).join(''):'<div class="empty">No agencies registered. Ask an agency to create an account and submit a profile.</div>';
+  $('#adminBookings').innerHTML=adminBookings.length?adminBookings.map(b=>`<article class="card"><div class="bottom" style="margin:0">${statusTag(b.status)}<small>${esc(b.id.slice(0,12))}</small></div><h3 style="margin-top:13px">${esc(getT(b.treatmentId)?.name||b.treatmentId)}</h3><p>Patient: ${esc(b.patient?.name)} · ${esc(b.patient?.country)}<br>Contact: ${esc(b.patient?.phone)}<br>Agency UID: ${esc(b.agencyUid.slice(0,12))}</p><div class="rowline"><span>Submitted total estimate</span><b>${currency(b.estimatedTotal)}</b></div>${appointmentHTML(b)}</article>`).join(''):'<div class="empty">No booking requests submitted yet.</div>';
+}
+async function adminAction(id,action){
+  if(!ready||profile?.role!=='admin')return notify('Admin role required.',true);
+  const a=adminAgencies.find(x=>x.id===id);if(!a)return;
+  if(action==='publish'&&!confirm(`Have you independently verified the GST/licence, owner's authority and hospital tie-up agreements for ${a.name}? Publish these treatment rates to the public marketplace?`))return;
+  try{
+    const batch=writeBatch(db);const ar=doc(db,'agencies',id),lr=doc(db,'listings',id);
+    if(action==='publish'){
+      const publicListing={agencyUid:id,name:a.name,city:a.city,hospitals:a.hospitals||[],rates:a.rates||{},hotels:a.hotels||[],apartments:a.apartments||[],assistants:a.assistants||[],transport:a.transport||[],status:'approved',updatedAt:serverTimestamp()};
+      batch.set(lr,publicListing);batch.update(ar,{status:'approved'});
+    }else{batch.update(ar,{status:action==='pending'?'pending':'suspended'});batch.delete(lr);}
+    await batch.commit();notify(action==='publish'?'Agency listing published. Public patient search is updated.':'Agency listing unpublished / status changed.');
+  }catch(e){notify('Agency review failed: '+errText(e),true);}
+}
+
+function openAuth(role){
+  authMode='login';$('#authRole').value=role==='agency'?'agency':'patient';renderAuthDialog();$('#authDialog').showModal();
+}
+function renderAuthDialog(){
+  $('#authTitle').textContent=authMode==='login'?'Sign in':'Create account';
+  $('#authSubmit').textContent=authMode==='login'?'Sign in':'Create account';
+  $('#authSwap').textContent=authMode==='login'?'New here? Create an account':'Already registered? Sign in';
+  $('#authNameWrap').hidden=authMode==='login';$('#authName').required=authMode==='register';
+  $('#authRoleWrap').hidden=authMode==='login';$('#authError').hidden=true;
+}
+async function authenticate(ev){
+  ev.preventDefault();if(!ready)return notify('Configure Firebase first.',true);
+  const email=$('#authEmail').value.trim(),password=$('#authPassword').value;
+  const submit=$('#authSubmit');submit.disabled=true;$('#authError').hidden=true;
+  try{
+    if(authMode==='login')await signInWithEmailAndPassword(auth,email,password);
+    else{
+      const role=$('#authRole').value;const name=$('#authName').value.trim();
+      const cred=await createUserWithEmailAndPassword(auth,email,password);
+      await setDoc(doc(db,'users',cred.user.uid),{role,email,name,createdAt:serverTimestamp()});
+      await updateProfile(cred.user,{displayName:name});
+      profile={role,email,name};signedUser=cred.user;refreshAccountUI();clearRoleListeners();startRoleListeners();
+    }
+    $('#authDialog').close();notify('Signed in. Your role and access are checked using Firebase Security Rules.');
+  }catch(e){$('#authError').textContent=errText(e);$('#authError').hidden=false;}
+  finally{submit.disabled=false;}
+}
+
+function attachHandlers(){
+  $$('.tab').forEach(b=>b.addEventListener('click',()=>changeScreen(b.dataset.screen)));
+  $('#homeLink').addEventListener('click',e=>{e.preventDefault();changeScreen('patient');showPatientStep(1);});
+  $('#authTop').addEventListener('click',()=>openAuth(activeScreen==='agency'?'agency':'patient'));
+  $('#logoutBtn').addEventListener('click',async()=>{if(!ready)return;await signOut(auth);$('#patientForm').reset();bookingFormValues=null;bookingFile=null;currentListing=null;showPatientStep(1);notify('Signed out. Private patient form details have been cleared from this page.');});
+  $('#authClose').addEventListener('click',()=>$('#authDialog').close());
+  $('#authSwap').addEventListener('click',()=>{authMode=authMode==='login'?'register':'login';renderAuthDialog();});
+  $('#authForm').addEventListener('submit',authenticate);
+  $('#searchForm').addEventListener('submit',e=>{e.preventDefault();$('#searchInput').value=$('#searchInput').value||'';renderTreatments();showPatientStep(1);$('#pStep1').scrollIntoView({behavior:'smooth'});});
+  $('#searchInput').addEventListener('input',renderTreatments);
+  $('#quickTreatments').addEventListener('click',e=>{const b=e.target.closest('[data-quick]');if(!b)return;$('#searchInput').value=b.dataset.quick;renderTreatments();$('#pStep1').scrollIntoView({behavior:'smooth'});});
+  $('#treatmentResults').addEventListener('click',e=>{const b=e.target.closest('[data-treatment]');if(!b)return;currentTreatment=getT(b.dataset.treatment);currentListing=null;renderQuotes();showPatientStep(2);});
+  $('#quoteResults').addEventListener('click',e=>{const b=e.target.closest('[data-choose-listing]');if(!b)return;currentListing=published.find(x=>x.id===b.dataset.chooseListing);currentExtras={stayType:'',stayIndex:'',nights:1,assistantIndex:'',assistantDays:1,transport:{}};renderQuotes();showPatientStep(3);});
+  $$('[data-back]').forEach(b=>b.addEventListener('click',()=>showPatientStep(Number(b.dataset.back))));
+  $('#extrasContent').addEventListener('change',e=>extraChange(e.target));
+  $('#extrasNext').addEventListener('click',()=>showPatientStep(4));
+  $('#patientForm').addEventListener('submit',e=>{e.preventDefault();toReview(e.currentTarget);});
+  $('#submitBooking').addEventListener('click',createBooking);
+  $('#showMyBookings').addEventListener('click',()=>$('#myBookings').scrollIntoView({behavior:'smooth'}));
+  $('#agencyForm').addEventListener('submit',saveAgency);
+  $('#agencyBookings').addEventListener('submit',e=>{if(e.target.matches('.booking-update')){e.preventDefault();updateAppointment(e.target);}});
+  $('#adminAgencies').addEventListener('click',e=>{const b=e.target.closest('[data-admin-action]');if(b)adminAction(b.dataset.id,b.dataset.adminAction);});
+  document.body.addEventListener('click',e=>{const b=e.target.closest('[data-prescription]');if(b)downloadPrescription(b.dataset.prescription);});
+}
+
+$('#rateFields').innerHTML=treatments.map(t=>`<label>${esc(t.name)}<input type="number" min="1" max="100000000" step="1" data-rate="${esc(t.id)}" placeholder="Rate in ₹"></label>`).join('');
+attachHandlers();init();
+
+</script>
+</body>
+</html>
